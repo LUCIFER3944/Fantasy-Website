@@ -1,16 +1,27 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
     height: 100vh;
     background: black;
+    overflow-x: hidden;
+  }
+  #click{
+    cursor: pointer;
+  }
+  .section1{
+    color: white;
+    text-align: center;
   }
   
   .scene {
-    width: 1000px;
+    width: 100vw;
+    height: 60vh;
     display: flex;
-    justify-content: space-between;
-    perspective: 800px;}
+    justify-content: space-evenly;
+    perspective: 800px;
+    flex-wrap: wrap;
+    
+  }
+    
   
     .card {
       position: relative;
