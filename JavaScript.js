@@ -68,7 +68,7 @@ TweenMax.from(".year", 1, {
 
 TweenMax.staggerFrom(".media ul li", 2, {
     opacity: 0,
-    delay: 3.2,
+    delay: 2.2,
     y: 40,
     ease: Expo.easeInOut
 }, 0.2)
@@ -78,7 +78,7 @@ document.getElementById('playButton').addEventListener('click', function() {
     let video = document.getElementById('myVideo');
     
     // Make the video visible
-    video.style.display = 'block';
+    video.style.display = 'inline';
     video.loop = true;
     // Play the video
     video.play();

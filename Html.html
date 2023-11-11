@@ -10,34 +10,55 @@
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Css.css">
+    <link media="screen and (max-width:480px)" rel="stylesheet" href="Phone.css"/>
+    
 </head>
-<body>
-  <div class="container ">
+<body >
+  <div class="container">
 <video  autoplay muted loop id="vid" src="Silver Blade.mp4" ></video>
     <div class="stripes">
         <div class="line-one"></div>
         <div class="line-two"></div>
     </div>
     <!-- navbar============== -->
-    <nav>
-        <div class="logo">
-            <span style="font-family: font1; font-size: 30px;">Fantasy</span>
+    <nav class="navbar navbar-expand-lg bg-body-opacity ">
+      <div class="container-fluid ">
+        <a class="navbar-brand text-light" href="Html.html"><img id="logo" src="Images/Logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-light" href="Stories.html">Stories</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Legends
+              </a>
+              <ul class="dropdown-menu ">
+                <li><a class="dropdown-item " href="Legends.html">Cards</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light " aria-disabled="false">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info" type="submit">Search</button>
+          </form>
         </div>
-        <ul>
-            <li><a href="">Collection</a></li>
-            <li><a href="Stories.html">Stories</a></li>
-            <li><a href="Legends.html">Legends</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-        <div class="search">
-            <i class="fa fa-search"></i>
-        </div>
-        <div class="menu">
-            <i class="fa fa-bars"></i>
-        </div>
+      </div>
     </nav>
 
-    <div class="img container-lg">
+    <div class="img">
         <img src="Image4-removebg-preview.png"  id="image4" alt="">
     </div>
 
