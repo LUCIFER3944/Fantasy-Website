@@ -73,6 +73,7 @@ TweenMax.staggerFrom(".media ul li", 2, {
     ease: Expo.easeInOut
 }, 0.2)
 // -----------------------------------//
+
 document.getElementById('playButton').addEventListener('click', function() {
     // Get the video element
     let video = document.getElementById('myVideo');
@@ -88,3 +89,4 @@ document.getElementById('playButton').addEventListener('click', function() {
     this.style.display = 'none';
   });
 // ------------------------------------//
+
